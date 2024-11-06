@@ -1,1 +1,4 @@
 .env
+
+#Folder to be ignored
+velocityvenv

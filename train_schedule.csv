@@ -1,51 +1,51 @@
-,id,request_date_time,station_name,mode,train_uid,origin_name,operator_name,platform,destination_name,aimed_departure_time,expected_departure_time,best_departure_estimate_mins,aimed_arrival_time
-0,0,2024-11-05T22:03:27+00:00,London Waterloo,train,L56714,London Waterloo,South Western Railway,8,Bournemouth,22:05,22:05,1,Unknonwn
-1,1,2024-11-05T22:03:27+00:00,London Waterloo,train,L60419,London Waterloo,South Western Railway,3,Hampton Court,22:06,22:06,2,Unknonwn
-2,2,2024-11-05T22:03:27+00:00,London Waterloo,train,L57830,London Waterloo,South Western Railway,15,Fratton,22:08,22:08,4,Unknonwn
-3,3,2024-11-05T22:03:27+00:00,London Waterloo,train,L60042,London Waterloo,South Western Railway,6,Shepperton,22:12,22:12,8,Unknonwn
-4,4,2024-11-05T22:03:27+00:00,London Waterloo,train,L61064,London Waterloo,South Western Railway,4,Chessington South,22:17,22:17,13,Unknonwn
-5,5,2024-11-05T22:03:27+00:00,London Waterloo,train,L58735,London Waterloo,South Western Railway,23,Reading,22:20,22:20,16,Unknonwn
-6,6,2024-11-05T22:03:27+00:00,London Waterloo,train,L59433,London Waterloo,South Western Railway,3,Woking,22:20,22:20,16,Unknonwn
-7,7,2024-11-05T22:03:27+00:00,London Waterloo,train,L57340,London Waterloo,South Western Railway,10,Yeovil Junction,22:20,22:20,16,Unknonwn
-8,8,2024-11-05T22:03:27+00:00,London Waterloo,train,L61888,London Waterloo,South Western Railway,21,Weybridge,22:22,22:22,18,Unknonwn
-9,9,2024-11-05T22:03:27+00:00,London Waterloo,train,Y00132,London Waterloo,South Western Railway,11,Alton,22:23,22:23,19,Unknonwn
-10,10,2024-11-05T22:03:27+00:00,London Waterloo,train,L56919,London Waterloo,South Western Railway,1,Dorking,22:24,22:24,20,Unknonwn
-11,11,2024-11-05T22:03:27+00:00,London Waterloo,train,L60539,London Waterloo,South Western Railway,6,London Waterloo,22:27,22:27,23,Unknonwn
-12,12,2024-11-05T22:03:27+00:00,London Waterloo,train,L61360,London Waterloo,South Western Railway,17,London Waterloo,22:30,22:30,26,Unknonwn
-13,13,2024-11-05T22:03:27+00:00,London Waterloo,train,L57685,London Waterloo,South Western Railway,12,Portsmouth Harbour,22:30,22:30,26,Unknonwn
-14,14,2024-11-05T22:03:27+00:00,London Waterloo,train,L59794,London Waterloo,South Western Railway,4,Guildford,22:33,22:33,29,Unknonwn
-15,15,2024-11-05T22:03:27+00:00,London Waterloo,train,L62278,London Waterloo,South Western Railway,22,Windsor & Eton Riverside,22:33,22:33,29,Unknonwn
-16,16,2024-11-05T22:03:27+00:00,London Waterloo,train,L60426,London Waterloo,South Western Railway,2,Hampton Court,22:36,22:36,32,Unknonwn
-17,17,2024-11-05T22:03:27+00:00,London Waterloo,train,L60843,London Waterloo,South Western Railway,14,Basingstoke,22:42,22:42,38,Unknonwn
-18,18,2024-11-05T22:03:27+00:00,London Waterloo,train,L60048,London Waterloo,South Western Railway,6,Shepperton,22:42,22:42,38,Unknonwn
-19,19,2024-11-05T22:03:27+00:00,London Waterloo,train,L58745,London Waterloo,South Western Railway,23,Bracknell,22:50,22:50,46,Unknonwn
-20,20,2024-11-05T22:03:27+00:00,London Waterloo,train,L57345,London Waterloo,South Western Railway,8,Salisbury,22:50,22:50,46,Unknonwn
-21,21,2024-11-05T22:03:27+00:00,London Waterloo,train,L59439,London Waterloo,South Western Railway,5,Woking,22:50,22:50,46,Unknonwn
-22,22,2024-11-05T22:03:27+00:00,London Waterloo,train,L61893,London Waterloo,South Western Railway,19,Weybridge,22:52,22:52,48,Unknonwn
-23,23,2024-11-05T22:03:27+00:00,London Waterloo,train,Y00136,London Waterloo,South Western Railway,11,Alton,22:53,22:53,49,Unknonwn
-24,24,2024-11-05T22:03:27+00:00,London Waterloo,train,L59000,London Waterloo,South Western Railway,1,Guildford,22:54,22:54,50,Unknonwn
-25,25,2024-11-05T22:03:27+00:00,London Waterloo,train,L60543,London Waterloo,South Western Railway,6,London Waterloo,22:57,22:57,53,Unknonwn
-26,26,2024-11-05T22:03:27+00:00,London Waterloo,train,L61069,London Waterloo,South Western Railway,3,Chessington South,22:59,22:59,55,Unknonwn
-27,27,2024-11-05T22:03:27+00:00,London Waterloo,train,L61583,London Waterloo,South Western Railway,15,Fratton,23:00,23:00,56,Unknonwn
-28,28,2024-11-05T22:03:27+00:00,London Waterloo,train,L61363,London Waterloo,South Western Railway,22,London Waterloo,23:00,23:00,56,Unknonwn
-29,29,2024-11-05T22:03:27+00:00,London Waterloo,train,L59804,London Waterloo,South Western Railway,2,Guildford,23:03,23:03,59,Unknonwn
-30,30,2024-11-05T22:03:27+00:00,London Waterloo,train,L62290,London Waterloo,South Western Railway,21,Windsor & Eton Riverside,23:03,23:03,59,Unknonwn
-31,31,2024-11-05T22:03:27+00:00,London Waterloo,train,L56725,London Waterloo,South Western Railway,12,Southampton Central,23:05,23:05,61,Unknonwn
-32,32,2024-11-05T22:03:27+00:00,London Waterloo,train,L60433,London Waterloo,South Western Railway,5,Hampton Court,23:06,23:06,62,Unknonwn
-33,33,2024-11-05T22:03:27+00:00,London Waterloo,train,L56932,London Waterloo,South Western Railway,3,Dorking,23:10,23:10,66,Unknonwn
-34,34,2024-11-05T22:03:27+00:00,London Waterloo,train,L60850,London Waterloo,South Western Railway,16,Basingstoke,23:12,23:12,68,Unknonwn
-35,35,2024-11-05T22:03:27+00:00,London Waterloo,train,L60055,London Waterloo,South Western Railway,8,Shepperton,23:13,23:13,69,Unknonwn
-36,36,2024-11-05T22:03:27+00:00,London Waterloo,train,L58755,London Waterloo,South Western Railway,24,Reading,23:20,23:20,76,Unknonwn
-37,37,2024-11-05T22:03:27+00:00,London Waterloo,train,L59446,London Waterloo,South Western Railway,7,Woking,23:20,23:20,76,Unknonwn
-38,38,2024-11-05T22:03:27+00:00,London Waterloo,train,L57738,London Waterloo,South Western Railway,18,Woking,23:22,23:22,78,Unknonwn
-39,39,2024-11-05T22:03:27+00:00,London Waterloo,train,Y00141,London Waterloo,South Western Railway,14,Alton,23:23,23:23,79,Unknonwn
-40,40,2024-11-05T22:03:27+00:00,London Waterloo,train,L60545,London Waterloo,South Western Railway,4,Twickenham,23:27,23:27,83,Unknonwn
-41,41,2024-11-05T22:03:27+00:00,London Waterloo,train,L61366,London Waterloo,South Western Railway,23,Kingston,23:30,23:30,86,Unknonwn
-42,42,2024-11-05T22:03:27+00:00,London Waterloo,train,L61589,London Waterloo,South Western Railway,10,Fratton,23:32,23:32,88,Unknonwn
-43,43,2024-11-05T22:03:27+00:00,London Waterloo,train,L62304,London Waterloo,South Western Railway,19,Windsor & Eton Riverside,23:33,23:33,89,Unknonwn
-44,44,2024-11-05T22:03:27+00:00,London Waterloo,train,L58428,London Waterloo,South Western Railway,13,Southampton Central,23:35,23:35,91,Unknonwn
-45,45,2024-11-05T22:03:27+00:00,London Waterloo,train,L60438,London Waterloo,South Western Railway,1,Hampton Court,23:36,23:36,92,Unknonwn
-46,46,2024-11-05T22:03:27+00:00,London Waterloo,train,L57350,London Waterloo,South Western Railway,9,Salisbury,23:40,23:40,96,Unknonwn
-47,47,2024-11-05T22:03:27+00:00,London Waterloo,train,L59014,London Waterloo,South Western Railway,15,Guildford,23:42,23:42,98,Unknonwn
-48,48,2024-11-05T22:03:27+00:00,London Waterloo,train,L60858,London Waterloo,South Western Railway,14,Basingstoke,23:48,23:48,104,Unknonwn
-49,49,2024-11-05T22:03:27+00:00,London Waterloo,train,L59825,London Waterloo,South Western Railway,5,Guildford,23:50,23:50,106,Unknonwn
+,request_date_time,station_name,mode,train_uid,origin_name,operator_name,platform,destination_name,aimed_departure_time,expected_departure_time,best_departure_estimate_mins,aimed_arrival_time
+0,2024-11-06T13:06:52+00:00,London Waterloo,train,L57775,London Waterloo,South Western Railway,16,Portsmouth Harbour,13:09,13:09,2,Unknonwn
+1,2024-11-06T13:06:52+00:00,London Waterloo,train,L60664,London Waterloo,South Western Railway,7,Basingstoke,13:12,13:12,5,Unknonwn
+2,2024-11-06T13:06:52+00:00,London Waterloo,train,L59925,London Waterloo,South Western Railway,5,Shepperton,13:12,13:12,5,Unknonwn
+3,2024-11-06T13:06:52+00:00,London Waterloo,train,L60960,London Waterloo,South Western Railway,4,Chessington South,13:17,13:17,10,Unknonwn
+4,2024-11-06T13:06:52+00:00,London Waterloo,train,L57244,London Waterloo,South Western Railway,8,Exeter St Davids,13:20,13:20,13,Unknonwn
+5,2024-11-06T13:06:52+00:00,London Waterloo,train,L58571,London Waterloo,South Western Railway,24,Reading,13:20,13:20,13,Unknonwn
+6,2024-11-06T13:06:52+00:00,London Waterloo,train,L59324,London Waterloo,South Western Railway,3,Woking,13:20,13:20,13,Unknonwn
+7,2024-11-06T13:06:52+00:00,London Waterloo,train,L61782,London Waterloo,South Western Railway,23,Weybridge,13:22,13:22,15,Unknonwn
+8,2024-11-06T13:06:52+00:00,London Waterloo,train,Y00062,London Waterloo,South Western Railway,14,Alton,13:23,13:23,16,Unknonwn
+9,2024-11-06T13:06:52+00:00,London Waterloo,train,L56813,London Waterloo,South Western Railway,1,Dorking,13:24,13:24,17,Unknonwn
+10,2024-11-06T13:06:52+00:00,London Waterloo,train,L60490,London Waterloo,South Western Railway,5,London Waterloo,13:27,13:27,20,Unknonwn
+11,2024-11-06T13:06:52+00:00,London Waterloo,train,L61313,London Waterloo,South Western Railway,22,London Waterloo,13:30,13:30,23,Unknonwn
+12,2024-11-06T13:06:52+00:00,London Waterloo,train,L57506,London Waterloo,South Western Railway,12,Portsmouth Harbour,13:30,13:30,23,Unknonwn
+13,2024-11-06T13:06:52+00:00,London Waterloo,train,L59616,London Waterloo,South Western Railway,4,Guildford,13:33,13:33,26,Unknonwn
+14,2024-11-06T13:06:52+00:00,London Waterloo,train,L62096,London Waterloo,South Western Railway,20,Windsor & Eton Riverside,13:33,13:33,26,Unknonwn
+15,2024-11-06T13:06:52+00:00,London Waterloo,train,L57962,London Waterloo,South Western Railway,11,Weymouth,13:35,13:35,28,Unknonwn
+16,2024-11-06T13:06:52+00:00,London Waterloo,train,L60251,London Waterloo,South Western Railway,3,Hampton Court,13:36,13:36,29,Unknonwn
+17,2024-11-06T13:06:52+00:00,London Waterloo,train,L60674,London Waterloo,South Western Railway,8,Basingstoke,13:42,13:42,35,Unknonwn
+18,2024-11-06T13:06:52+00:00,London Waterloo,train,L59931,London Waterloo,South Western Railway,5,Shepperton,13:42,13:42,35,Unknonwn
+19,2024-11-06T13:06:52+00:00,London Waterloo,train,L61473,London Waterloo,South Western Railway,9,Haslemere,13:45,13:45,38,Unknonwn
+20,2024-11-06T13:06:52+00:00,London Waterloo,train,L60966,London Waterloo,South Western Railway,4,Chessington South,13:47,13:47,40,Unknonwn
+21,2024-11-06T13:06:52+00:00,London Waterloo,train,L58580,London Waterloo,South Western Railway,23,Reading,13:50,13:50,43,Unknonwn
+22,2024-11-06T13:06:52+00:00,London Waterloo,train,L57250,London Waterloo,South Western Railway,7,Salisbury,13:50,13:50,43,Unknonwn
+23,2024-11-06T13:06:52+00:00,London Waterloo,train,L59330,London Waterloo,South Western Railway,3,Woking,13:50,13:50,43,Unknonwn
+24,2024-11-06T13:06:52+00:00,London Waterloo,train,L61787,London Waterloo,South Western Railway,24,Weybridge,13:52,13:52,45,Unknonwn
+25,2024-11-06T13:06:52+00:00,London Waterloo,train,Y00066,London Waterloo,South Western Railway,10,Alton,13:53,13:53,46,Unknonwn
+26,2024-11-06T13:06:52+00:00,London Waterloo,train,L58886,London Waterloo,South Western Railway,1,Guildford,13:54,13:54,47,Unknonwn
+27,2024-11-06T13:06:52+00:00,London Waterloo,train,L60493,London Waterloo,South Western Railway,5,London Waterloo,13:57,13:57,50,Unknonwn
+28,2024-11-06T13:06:52+00:00,London Waterloo,train,L61315,London Waterloo,South Western Railway,22,London Waterloo,14:00,14:00,53,Unknonwn
+29,2024-11-06T13:06:52+00:00,London Waterloo,train,Y00815,London Waterloo,South Western Railway,15,Portsmouth Harbour,14:00,14:00,53,Unknonwn
+30,2024-11-06T13:06:52+00:00,London Waterloo,train,L59626,London Waterloo,South Western Railway,4,Guildford,14:03,14:03,56,Unknonwn
+31,2024-11-06T13:06:52+00:00,London Waterloo,train,L62106,London Waterloo,South Western Railway,20,Windsor & Eton Riverside,14:03,14:03,56,Unknonwn
+32,2024-11-06T13:06:52+00:00,London Waterloo,train,Y01190,London Waterloo,South Western Railway,13,Weymouth,14:05,14:05,58,Unknonwn
+33,2024-11-06T13:06:52+00:00,London Waterloo,train,L60261,London Waterloo,South Western Railway,3,Hampton Court,14:06,14:06,59,Unknonwn
+34,2024-11-06T13:06:52+00:00,London Waterloo,train,L57781,London Waterloo,South Western Railway,12,Portsmouth Harbour,14:09,14:09,62,Unknonwn
+35,2024-11-06T13:06:52+00:00,London Waterloo,train,L60683,London Waterloo,South Western Railway,8,Basingstoke,14:12,14:12,65,Unknonwn
+36,2024-11-06T13:06:52+00:00,London Waterloo,train,L59938,London Waterloo,South Western Railway,5,Shepperton,14:12,14:12,65,Unknonwn
+37,2024-11-06T13:06:52+00:00,London Waterloo,train,L60972,London Waterloo,South Western Railway,4,Chessington South,14:17,14:17,70,Unknonwn
+38,2024-11-06T13:06:52+00:00,London Waterloo,train,L57256,London Waterloo,South Western Railway,9,Exeter St Davids,14:20,14:20,73,Unknonwn
+39,2024-11-06T13:06:52+00:00,London Waterloo,train,L58589,London Waterloo,South Western Railway,24,Reading,14:20,14:20,73,Unknonwn
+40,2024-11-06T13:06:52+00:00,London Waterloo,train,L59336,London Waterloo,South Western Railway,3,Woking,14:20,14:20,73,Unknonwn
+41,2024-11-06T13:06:52+00:00,London Waterloo,train,L61793,London Waterloo,South Western Railway,23,Weybridge,14:22,14:22,75,Unknonwn
+42,2024-11-06T13:06:52+00:00,London Waterloo,train,Y00070,London Waterloo,South Western Railway,10,Alton,14:23,14:23,76,Unknonwn
+43,2024-11-06T13:06:52+00:00,London Waterloo,train,L56825,London Waterloo,South Western Railway,1,Dorking,14:24,14:24,77,Unknonwn
+44,2024-11-06T13:06:52+00:00,London Waterloo,train,L60495,London Waterloo,South Western Railway,5,London Waterloo,14:27,14:27,80,Unknonwn
+45,2024-11-06T13:06:52+00:00,London Waterloo,train,L61318,London Waterloo,South Western Railway,21,London Waterloo,14:30,14:30,83,Unknonwn
+46,2024-11-06T13:06:52+00:00,London Waterloo,train,L57526,London Waterloo,South Western Railway,14,Portsmouth Harbour,14:30,14:30,83,Unknonwn
+47,2024-11-06T13:06:52+00:00,London Waterloo,train,L59636,London Waterloo,South Western Railway,4,Guildford,14:33,14:33,86,Unknonwn
+48,2024-11-06T13:06:52+00:00,London Waterloo,train,L62116,London Waterloo,South Western Railway,20,Windsor & Eton Riverside,14:33,14:33,86,Unknonwn
+49,2024-11-06T13:06:52+00:00,London Waterloo,train,L57974,London Waterloo,South Western Railway,11,Weymouth,14:35,14:35,88,Unknonwn
