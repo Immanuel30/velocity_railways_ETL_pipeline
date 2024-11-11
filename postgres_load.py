@@ -2,48 +2,65 @@ import psycopg2
 from psycopg2 import sql
 from dotenv import load_dotenv 
 import os
-import pandas as pd 
+import pandas as pd
 
-def postgres_load():
 
+def postgres_load(**kwargs):
+
+    ti = kwargs['ti']
+    train_schedule_df =ti.xcom_pull(key="transformed_data", task_ids="transformation_layer")
+    
     #Readdin the data
-    train_schedule_df = pd.read_csv(r'train_schedule.csv')
+    #train_schedule_df = pd.read_csv(r'/mnt/c/Users/imarr/OneDrive/Desktop/DE/Velocity_railway/train_schedule.csv')
+    #train_schedule_df = pd.read_csv(r'C:\Users\imarr\OneDrive\Desktop\DE\Velocity_railway\train_schedule.csv')
     # Database connection details
 
-    local_conn = psycopg2.connect(
-                            host= 'localhost', 
-                            database = 'velocity_railway', 
-                            user = 'postgres', 
-                            password = 'Password', 
-                            port= '5432'
+    windows_ip = '192.168.0.178'  
+    local_conn = None
+    cursor = None
+    try:
+        local_conn = psycopg2.connect(
+            host=windows_ip,
+            database='velocity_railway',
+            user='postgres',
+            password='Password123',
+            port='5432'
     )
+        print("Connection successful!")
+        cursor = local_conn.cursor()
+    except psycopg2.OperationalError as e:
+        print(f"Connection failed: {e}")
 
     # Connect to Azure and Local PostgreSQL
     #azure_conn = psycopg2.connect(**azure_conn_details)
     #local_conn = psycopg2.connect(local_conn_details)
 
-    cursor = local_conn.cursor()
 
-    #Create table
+    if cursor:
+        try:
+            # Proceed with the SQL query if the cursor is valid
+            cursor.execute("""CREATE TABLE IF NOT EXISTS train_schedule(
+            id SERIAL PRIMARY KEY,
+            request_date_time  VARCHAR (100),
+            station_name VARCHAR (100),
+            mode VARCHAR (100),
+            train_uid VARCHAR (100),
+            origin_name VARCHAR (100),
+            operator_name VARCHAR (100),
+            platform VARCHAR(100),
+            destination_name VARCHAR(100),
+            aimed_departure_time VARCHAR (100),
+            expected_departure_time VARCHAR(100),
+            best_departure_estimate_mins VARCHAR(100),
+            aimed_arrival_time VARCHAR (100)
 
-    #Execute query to create table
-    cursor.execute("""CREATE TABLE IF NOT EXISTS train_schedule(
-        id SERIAL PRIMARY KEY,
-        request_date_time  VARCHAR (100),
-        station_name VARCHAR (100),
-        mode VARCHAR (100),
-        train_uid VARCHAR (100),
-        origin_name VARCHAR (100),
-        operator_name VARCHAR (100),
-        platform VARCHAR(100),
-        destination_name VARCHAR(100),
-        aimed_departure_time VARCHAR (100),
-        expected_departure_time VARCHAR(100),
-        best_departure_estimate_mins INT,
-        aimed_arrival_time VARCHAR (100)
-
-    );
-    """)
+        );
+        """)
+            print("Table created successfully.")
+        except Exception as e:
+            print(f"Error executing query: {e}")
+    else:
+        print("Connection or cursor initialization failed. Cannot execute the query.")
 
 
     #committing the query to database

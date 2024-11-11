@@ -9,13 +9,18 @@ from great_expectations.validator.validator import Validator
 from great_expectations.execution_engine.pandas_execution_engine import PandasExecutionEngine
 from great_expectations.core.batch import Batch
 from great_expectations.core import ExpectationSuite
+from great_expectations.core.batch import Batch
+from great_expectations.execution_engine import PandasExecutionEngine
+from great_expectations.core.expectation_suite import ExpectationSuite
+from great_expectations import get_context
 import tempfile
 
 #reading the data
-response= response.json()
 
-def transformation():
-
+def transformation(**kwargs):
+    print("Starting transformation with response data")
+    ti = kwargs['ti']
+    response =ti.xcom_pull(key="raw_data", task_ids="extraction_layer")
     #Filtering relevant columns
     train_columns = []
 
@@ -30,12 +35,9 @@ def transformation():
     }
     train_columns.append(train_info)
 
-    train_columns
-
     #Passing the filtered data into a dataframe
     train_columns_df = pd.DataFrame(train_columns)
     train_columns_df.reset_index(inplace=True)
-    train_columns_df
 
 
     train__departure_columns = []
@@ -58,8 +60,6 @@ def transformation():
         except (KeyError, TypeError) as e:
             print(f"Error processing columns: {e}")     
 
-    print(train__departure_columns)
-
 
     #passing columns into a dataframe
     train__departure_columns_df = pd.DataFrame(train__departure_columns)
@@ -78,20 +78,23 @@ def transformation():
     #Filling missing data
     train_schedule_df['request_date_time'] = train_schedule_df['request_date_time'].ffill()
     train_schedule_df['station_name'] = train_schedule_df['station_name'].ffill()
-
-    #Filling up missing values
-
-    train_schedule_df['aimed_arrival_time'].fillna('Unknonwn', inplace=True)
-    train_schedule_df.reset_index(drop=True, inplace=True)
+    train_schedule_df.fillna('unknown', inplace=True)
 
     #Dropping the index column
     train_schedule_df.drop( axis=0, columns='index', level=None, inplace=True, errors='raise')
 
+    #Saving file to CSV
+    #try:
+        #train_schedule_df.to_csv('train_schedule.csv')
+        #print("Transformed data saved to CSV")
+    #except Exception as e:
+        #print(f"Transformed data not saved: {e}")
+        
 
     #validating transformed data
 
     try:
-        #context = get_context()
+        context = get_context()
 
 
         suite = ExpectationSuite("train_schedule_suite")
@@ -130,12 +133,17 @@ def transformation():
 
         # Step 6: Validate the DataFrame and print the results
         transformed_results = validator.validate()
-        print("Validation results:", transformed_results)
+        print(f"Validation results: {transformed_results}. Data transformation successfull")
+        
 
     except Exception as e:
         print(f"Data Validation failed: {e}")
 
-    print("Data transformed successfully")
+    ti.xcom_push(key="transformed_data", value=train_schedule_df)
+
+    return train_schedule_df
+
+
 
 if __name__ == "__main__":
     transformation()

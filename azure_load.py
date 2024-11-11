@@ -8,10 +8,13 @@ import pandas as pd
 
 # Defining database connection parameters
 
-def azure_load():
+def azure_load(**kwargs):
 
     #Reading the data
-    train_schedule_df = pd.read_csv(r'train_schedule.csv')
+    #train_schedule_df = pd.read_csv(r'/mnt/c/Users/imarr/OneDrive/Desktop/DE/Velocity_railway/train_schedule.csv')
+
+    ti = kwargs['ti']
+    train_schedule_df =ti.xcom_pull(key="transformed_data", task_ids="transformation_layer")
 
     conn_params = {
         "host": "postgres-server123.postgres.database.azure.com",
@@ -47,7 +50,7 @@ def azure_load():
         destination_name VARCHAR(100),
         aimed_departure_time VARCHAR (100),
         expected_departure_time VARCHAR(100),
-        best_departure_estimate_mins INT,
+        best_departure_estimate_mins VARCHAR(100),
         aimed_arrival_time VARCHAR (100)
 
     );
