@@ -43,3 +43,6 @@ Velocity Railways is currently facing challenges in providing accurate and real-
 
 - **Predictive Analytics**: Use historical data to predict potential delays and provide proactive updates to passengers.
 - **Mobile Application**: Develop a mobile app for passengers to receive updates on the go.
+
+## Architecture
+![My Image](Images/V_railways.png)
